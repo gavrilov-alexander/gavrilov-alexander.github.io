@@ -3,16 +3,19 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Lenni Art</title>
-        <link rel="stylesheets" href="styles/styles.css?ver=0" />
+        <link rel="stylesheets" href="styles/styles.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+              rel="stylesheet">
     </head>
 
-    <body class="body">
+    <body class="body"> 
         <header class="page-header">
-            <a href="index.html" class="page-header_logo">Логотип</a>
+            <div class="page-header_container">
+                <a href="index.html" class="page-header_logo">
+                    <img src="assets/images/logo.svg" class="page-header_logo-img"/></a>
             <nav class="page-header_nav">
                 <a href="#" class="page-header_nav-link">Мероприятия</a>
                 <a href="#" class="page-header_nav-link">Блог</a>
@@ -20,12 +23,24 @@
                 <a href="#" class="page-header_nav-link">Контакты</a>
             </nav>
 
-            <a href="#" class="btn page-header_user-btn"></a>
+            <a href="#" class="btn page-header_user-btn">Войти</a>
+            </div>
+            
         </header>
 
         <main class="main">
             <div class="home">
-                <header class="main-header home_main-header"></header>
+                <header class="main-header home_main-header">
+                    <h1 class="main-header_title">Арт - пространство</h1>
+                    <picture class="main-header_picture">
+                        <img src="assets/images/lenni.png"
+                        class="main-header_img"/>
+                    </picture>
+                    <p class="main-header_text">
+                        для людей, горящих сердцем и делом
+                        место для настоящего
+                    </p>
+                </header>
                 <section class="offers home_offers"></section>
                 <section class="about home_about"></section>
                 <section class="upcoming home_upcoming"></section>
